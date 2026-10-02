@@ -22,6 +22,29 @@ elements_atomic_numbers = {
 }
 
 
+element_atomic_mass = {
+    "hydrogen": 1.008,
+    "helium": 4.0026,
+    "lithium": 6.94,
+    "beryllium": 9.0122,
+    "boron": 10.81,
+    "carbon": 12.011,
+    "nitrogen": 14.007,
+    "oxygen": 15.999,
+    "fluorine": 18.998,
+    "neon": 20.180,
+    "sodium": 22.990,
+    "magnesium": 24.305,
+    "aluminum": 26.982,
+    "silicon": 28.085,
+    "phosphorus": 30.974,
+    "sulfur": 32.06,
+    "chlorine": 35.45,
+    "argon": 39.948,
+    "potassium": 39.098,
+    "calcium": 40.078,
+}
+
 def electron_finder():
     ele_choice = input("Enter Element name: ")
     print(f"The Electrons in {ele_choice} is {elements_atomic_numbers[ele_choice]}")
