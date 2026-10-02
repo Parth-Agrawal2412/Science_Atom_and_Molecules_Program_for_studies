@@ -24,10 +24,14 @@ elements_atomic_numbers = {
 
 def electron_finder():
     ele_choice = input("Enter Element name: ")
-    print(f"The Electron in {ele_choice} is {elements_atomic_numbers[ele_choice]}")
+    print(f"The Electrons in {ele_choice} is {elements_atomic_numbers[ele_choice]}")
 
 def proton_finder():
     ele_choice = input("Enter Element name: ")
-    print(f"The Proton in {ele_choice} is {elements_atomic_numbers[ele_choice]}")
+    print(f"The Protons in {ele_choice} is {elements_atomic_numbers[ele_choice]}")
+
+# def atomic_number_finder():
+#     ele_choice = input("Enter Element name: ")
+#     print(f"The Atomic Number of {ele_choice} is {elements_atomic_numbers[ele_choice]}")
 
 electron_finder()
