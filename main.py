@@ -11,7 +11,7 @@ elements_atomic_numbers = {
     "neon": 10,
     "sodium": 11,
     "magnesium": 12,
-    "aluminum": 13,
+    "aluminium": 13,
     "silicon": 14,
     "phosphorus": 15,
     "sulfur": 16,
@@ -105,10 +105,20 @@ while(True):
             valency = 1
             print(valency)
         elif 2-k==0:
-            if 8-l<4:
+            if 8-l<4 and l!=8:
                 valency = 8-l
                 print(valency)
             elif 8-l>4:
                 valency = l
                 print(valency)
+            elif 8-m!=0:
+                if 8-m<=4:
+                    valency = 8-m
+                    print(valency)
+                elif 8-m>4:
+                    valency = m
+                    print(valency)
+            elif 8-m==0:
+                None
+
     distribution_electrons()
