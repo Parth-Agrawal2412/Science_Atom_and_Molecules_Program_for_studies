@@ -99,4 +99,15 @@ def distribution_electrons():
     print(f"M shell: {m}")
     print(f"N shell: {n}")
 
+    valency = 0
+    if 2-k!=0:
+        valency = 1
+        print(valency)
+    elif 2-k==0:
+        if 8-l<4:
+            valency = 8-l
+            print(valency)
+        elif 8-l>4:
+            valency = l
+            print(valency)
 distribution_electrons()
