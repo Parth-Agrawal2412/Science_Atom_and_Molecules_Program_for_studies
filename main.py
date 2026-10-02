@@ -64,3 +64,39 @@ def atomic_mass_finder():
 def neutron_finder():
     ele_choice = input("Enter Element name: ")
     print(f"The neutron in {ele_choice} is {element_atomic_mass[ele_choice] - elements_atomic_numbers[ele_choice]}")
+
+def distribution_electrons():
+    ele_choice = input("Enter Element name: ")
+    k = 0
+    l = 0
+    m = 0
+    n = 0
+    electron = elements_atomic_numbers[ele_choice]
+    # Fill K shell (max 2)
+    if electron > 0:
+        k = min(electron, 2)
+        electron -= k
+
+    # Fill L shell (max 8)
+    if electron > 0:
+        l = min(electron, 8)
+        electron -= l
+
+    # Fill M shell (max 8 for elements up to Calcium)
+    if electron > 0:
+        m = min(electron, 8)
+        electron -= m
+
+    # Fill N shell (remaining electrons)
+    if electron > 0:
+        n = electron
+
+    print(
+        f"\nElectron Distribution for {ele_choice} (Atomic Number: {elements_atomic_numbers[ele_choice]}):"
+    )
+    print(f"K shell: {k}")
+    print(f"L shell: {l}")
+    print(f"M shell: {m}")
+    print(f"N shell: {n}")
+
+distribution_electrons()
