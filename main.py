@@ -34,4 +34,3 @@ def atomic_number_finder():
     ele_choice = input("Enter Element name: ")
     print(f"The Atomic Number of {ele_choice} is {elements_atomic_numbers[ele_choice]}")
 
-electron_finder()
